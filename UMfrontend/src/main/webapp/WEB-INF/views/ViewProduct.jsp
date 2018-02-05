@@ -16,13 +16,13 @@
 <title>Product</title>
 <style>
 .product {
-  margin: 1em 8em;
+ margin: 1em 8em;
   width: 80%;
   overflow: hidden;
-  background: transparent;
+  background: black;
   color: white;
   border-radius: 10px;
-  border: 1px solid white;
+  border: 1px solid black;
 }
 .product tr {
   border: 1px solid white;
@@ -31,7 +31,7 @@
   background-color: transparent;
 }
 .product th {
-  display: none;
+ display: none;
   border: 1px solid white;
   background-color: white;
   color: black;
@@ -88,7 +88,7 @@ a{
 color:red;
 }
 body {
-  background-image: url("resources/images/background.jpg")!important;
+  background-color:white;
 }
 h1 {
   font-weight: normal;
