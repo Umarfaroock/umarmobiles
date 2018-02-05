@@ -14,19 +14,25 @@ import org.springframework.orm.hibernate4.HibernateTransactionManager;
 import org.springframework.orm.hibernate4.LocalSessionFactoryBuilder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+import com.niit.dao.CartDao;
 import com.niit.dao.CategoryDao;
 import com.niit.dao.ProductDao;
 import com.niit.dao.RoleDao;
+import com.niit.dao.ShipmentDao;
 import com.niit.dao.SupplierDao;
 import com.niit.dao.UserDao;
+import com.niit.daoimpl.CartDaoImpl;
 import com.niit.daoimpl.CategoryDaoImpl;
 import com.niit.daoimpl.ProductDaoImpl;
 import com.niit.daoimpl.RoleDaoImpl;
+import com.niit.daoimpl.ShipmentDaoImpl;
 import com.niit.daoimpl.SupplierDaoImpl;
 import com.niit.daoimpl.UserDaoImpl;
+import com.niit.model.Cart;
 import com.niit.model.Category;
 import com.niit.model.Product;
 import com.niit.model.Role;
+import com.niit.model.Shipment;
 import com.niit.model.Supplier;
 import com.niit.model.User;
 
@@ -73,6 +79,8 @@ public class DBconfig {
 		sessionBuilder.addAnnotatedClass(Category.class);
 		sessionBuilder.addAnnotatedClass(Supplier.class);
 		sessionBuilder.addAnnotatedClass(Product.class);
+		sessionBuilder.addAnnotatedClass(Shipment.class);
+		sessionBuilder.addAnnotatedClass(Cart.class);
 		return sessionBuilder.buildSessionFactory();
 	}
 	@Autowired
@@ -111,7 +119,20 @@ public class DBconfig {
 	@Bean(name = "ProductDao")
 	public ProductDao getProductDao(SessionFactory sessionFactory) {
 		return new ProductDaoImpl(sessionFactory);
-	}}
+	}
+
+	@Autowired(required = true)
+	@Bean(name = "ShipmentDao")
+	public ShipmentDao getShipmentDao(SessionFactory sessionFactory) {
+		return new ShipmentDaoImpl(sessionFactory);
+	}
+	
+	@Autowired(required = true)
+	@Bean(name = "CartDao")
+	public CartDao getCartDao(SessionFactory sessionFactory) {
+		return new CartDaoImpl(sessionFactory);
+	}
+}
 
 
 
