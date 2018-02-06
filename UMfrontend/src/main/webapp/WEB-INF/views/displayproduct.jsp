@@ -72,13 +72,13 @@ margin-top: 50px;
 margin-bottom: 5px;
 }
 .Latest{
-padding-top: 40px;
+padding-top: 10px;
 }
 #footer{
 margin-top: 250px;
 }
 body {
-	background: url(resources/images/bg/background.jpg) !important;
+	background: url(resources/images/bg/background.jpg);
 	padding: 0px;
 	height: 100%;
 }
@@ -101,7 +101,7 @@ body {
 					<div id="f1_container1">
 						<div id="f1_card1" class="shadow">
 							<div class="front face">
-								<img class="alb" src="resources/images/Product/${product.productId}.jpg" />
+								<img class="alb" src="resources/product/${product.productId}.jpg" />
 							</div>
 							<div class="back face center">
 								<p class="proname">${product.productName}</p>
@@ -112,6 +112,5 @@ body {
 					</div>
 				</div>
 				</c:forEach>
-</body>
+	 </body>
 
-<%@ include file="footer.jsp"%>

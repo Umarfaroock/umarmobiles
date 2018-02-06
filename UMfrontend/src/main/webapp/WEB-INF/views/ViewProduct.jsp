@@ -120,7 +120,7 @@ h1 span {
   <tr>
     <td>${status.count}</td>
 			<td>${product.productId}</td>
-			<td> <img src="resources/images/products/${product.productId}.jpg" alt="${product.productId}" width=100px; height=100px;></td>
+			<td> <img src="resources/product/${product.productId}.jpg" alt="${product.productId}" width=100px; height=100px;></td>
 			<td>${product.productName}</td>
 			<td>${product.productDescription}</td>
 			<td>${product.stock}</td>

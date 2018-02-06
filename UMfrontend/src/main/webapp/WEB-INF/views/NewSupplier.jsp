@@ -85,12 +85,6 @@ function isNumeric(elem, helperMsg) {
       <input type="text" class="form-control" name="ContactNumber" id="contactnumber" placeholder="Enter Contact Number" required>
     </div>
   </div>
-  <div class="form-group">
-    <label class="control-label col-sm-offset-2 col-sm-3" for="pwd">Image:</label>
-    <div class="col-sm-3"> 
-      <input type="file" class="form-control" name="file" id="file" placeholder="File" required>
-    </div>
-  </div>
   <div class="form-group"> 
     <div class="col-sm-offset-5 col-sm-3">
       <button type="submit" class="btn btn-dark" id="subbutton">Submit</button>

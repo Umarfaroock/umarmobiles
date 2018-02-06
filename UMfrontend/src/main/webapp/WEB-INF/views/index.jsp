@@ -18,14 +18,15 @@
 		<div class="content">
 	<%@ include file="header.jsp"%>
 	<%@ include file="carousel.jsp"%>
+	<%-- <%@ include file="displayproduct.jsp"%> --%>
 	<c:if test="${pageContext.request.userPrincipal.name==null }">
-		<%@ include file="displayfeatured.jsp"%>
-	</c:if>
-	<c:if test="${pageContext.request.userPrincipal.name!=null }">
-		<security:authorize access="hasRole('ROLE_USER')">
-			<%@ include file="displayfeatured.jsp"%>
-		</security:authorize>
-	</c:if>
+					<%@ include file="displayfeatured.jsp"%>
+					</c:if>
+					<c:if test="${pageContext.request.userPrincipal.name!=null }">
+					<security:authorize access="hasRole('ROLE_USER')">
+					<%@ include file="displayfeatured.jsp"%>
+					</security:authorize>
+					</c:if>
 	</div>
 	</div>
 	<%@ include file="footer.jsp"%>

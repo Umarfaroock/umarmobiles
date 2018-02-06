@@ -101,11 +101,18 @@ public class ProductController {
 	
 	}
 
-	/*@RequestMapping("displayproduct")
+	@RequestMapping("displayproduct")
 	public String ProductDisplay(@RequestParam ("suppliername") String suppliername, Model model){
 		List<Product> product = productDao.getBySupplierName(suppliername);
 		model.addAttribute("product", product);
-		return "display";
+		return "displayproduct";
 	}
-*/
+	
+	@RequestMapping("product")
+	public String albums( Model model){
+		List<Product> product = productDao.list();
+		model.addAttribute("product", product);
+		return "displayproduct";
+	}
+
 }

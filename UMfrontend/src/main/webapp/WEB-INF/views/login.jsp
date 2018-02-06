@@ -134,7 +134,7 @@
 <body>
 <%@ include file="header.jsp"%>
 <%@ include file="footer.jsp"%>
-
+<form action="isvaliduser" method="post" onsubmit="return formRegister()" class="form-horizontal">
 <div class="body"></div>
 		<div class="grad"></div>
 		<div class="header">
@@ -142,7 +142,7 @@
 		</div>
 		<br>
 		<div class="login">
-				<input type="text" placeholder="username" name="user"><br>
+				<input type="text" placeholder="username" name="emailId"><br>
 				<input type="password" placeholder="password" name="password"><br><br><br>
 				<br><input type="button" value="Login">
          </div>

@@ -19,7 +19,8 @@ public class IndexController {
 
 	@RequestMapping("/")
 	public String homePage(Model model) {
-
+		List<Product> product = productDao.getByFeatured();
+		model.addAttribute("product", product);
 		return "index";
 	}
 	

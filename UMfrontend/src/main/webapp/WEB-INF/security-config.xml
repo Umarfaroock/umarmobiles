@@ -21,7 +21,7 @@
             username-parameter="EmailId"
             password-parameter="Password" />
         <security:logout
-            logout-success-url="/loginpage?logout" logout-url="/j_spring_security_logout" />
+            logout-success-url="/login?logout" logout-url="/logout" />
             <security:csrf disabled="true"/>
     </security:http> 
     

@@ -79,11 +79,11 @@ padding-top: 10px;
 					<div id="f1_container1">
 						<div id="f1_card1" class="shadow">
 							<div class="front face">
-								<img class="alb" src="resources/images/albums/${product.productId}.jpg" />
+								<img class="alb" src="resources/product/${product.productId}.jpg" />
 							</div>
 							<div class="back face center">
 								<p class="proname">${product.productName}</p>
-								<p><a href="albumdescription?productId=${product.productId}"><button type="submit" class="btn btn-warning btn-md"><span class="glyphicon glyphicon-eye-open"></span>View</button></a></p>
+								<p><a href="productdescription?productId=${product.productId}"><button type="submit" class="btn btn-warning btn-md"><span class="glyphicon glyphicon-eye-open"></span>View</button></a></p>
 							</div>
 						</div>
 					</div>

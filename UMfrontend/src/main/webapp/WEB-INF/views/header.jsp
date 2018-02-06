@@ -17,6 +17,11 @@ a {
 	color: red !important;
 }
 </style>
+<script>
+    $(document).ready(function () {
+        $('.dropdown-toggle').dropdown();
+    });
+</script>
 </head>
 <body>
 	<nav class="navbar navbar-default navbar-fixed-top">
