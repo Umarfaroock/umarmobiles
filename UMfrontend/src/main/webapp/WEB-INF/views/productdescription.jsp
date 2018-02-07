@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Album</title>
+<title>Product</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -18,7 +18,7 @@ html {
 	height: 100%;
 }
 body {
-	background: url(resources/images/bg/background.jpg) !important;
+	background-color:black;
 	padding: 0px;
 	height: 100%;
 }
@@ -43,15 +43,15 @@ h5{
  <img id="pic"src="resources/product/${product.productId}.jpg" alt="${product.productId}">
  </div>
  <div class="col-sm-6">
-<h5 >Album Name: ${product.productName}</h5>
-<h5 >Album Description: ${product.productDescription}</h5>
+<h5 >Product Name: ${product.productName}</h5>
+<h5 >Product Description: ${product.productDescription}</h5>
   <h5>Price: $ ${product.price}</h5>
  <span style="color: red;"> ${message}</span>
 
   	<c:if test="${empty OutofStock}">
     <c:if test="${pageContext.request.userPrincipal.name == null }">
   <p><a href="login"><button class="btn btn-success">Add To Cart</button></a></p>
-  <p><a href="main"><button align="left" class="btn btn-danger">Go Back</button></a></p>
+  <p><a href="index"><button align="left" class="btn btn-danger">Go Back</button></a></p>
   </c:if>
     <c:if test="${pageContext.request.userPrincipal.name != null }">
   <p><a href="addtocart?productId=${product.productId}"><button class="btn btn-success">Add To Cart</button></a></p>
@@ -61,7 +61,7 @@ h5{
     	<c:if test="${not empty OutofStock}">
     <c:if test="${pageContext.request.userPrincipal.name == null }">
   <p><button class="btn btn-warning">Out of Stock</button></p>
-  <p><a href="main"><button align="left" class="btn btn-danger">Go Back</button></a></p>
+  <p><a href="index"><button align="left" class="btn btn-danger">Go Back</button></a></p>
   </c:if>
     <c:if test="${pageContext.request.userPrincipal.name != null }">
   <p><button class="btn btn-warning">Out of Stock</button></p>

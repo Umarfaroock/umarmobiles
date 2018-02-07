@@ -15,7 +15,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <style type="text/css">
 .body{
-	background-image: url("https://wallpaperscraft.com/image/daath_band_members_t-shirts_look_3934_1920x1080.jpg");
+	background-color:black;
 	background-size: cover;
 	-webkit-filter: blur(2px);
 	position: absolute;

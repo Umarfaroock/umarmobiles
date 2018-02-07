@@ -24,7 +24,7 @@ input{
 color: black !important;
 }
 body{
-	background: url(resources/images/bg/background.jpg) !important ;
+	background-color:black ;
 	padding: 0px;
 }
 #albums{
@@ -61,9 +61,9 @@ margin-top: 250px;
 			<c:forEach items="${cartitems}" var="cartitem">
 				<tr style="margin-top: 5px; margin-right: 20px;!important"
 					class="item-row">
-					<td><ahref="albumdescription?productId=${cartitem.productId}"><img
+					<td><ahref="productdescription?productId=${cartitem.productId}"><img
 							alt="${cartitem.productName}"
-							src="resources/images/albums/${cartitem.productId}.jpg" width="100px"
+							src="resources/product/${cartitem.productId}.jpg" width="100px"
 							; height="100px;"></a></td>
 					<td style="text-align: left;">${cartitem.productName}</td>
 					<td style="text-align: right;">
@@ -86,7 +86,7 @@ margin-top: 250px;
 				<td></td>
 			</tr>
 			<tr>
-				<td colspan="4" class="text-left"><a href="main"
+				<td colspan="4" class="text-left"><a href="index"
 					class="btn btn-info"> <span
 						class="glyphicon glyphicon-shopping-cart"></span> Continue
 						Shopping
@@ -102,3 +102,4 @@ margin-top: 250px;
 </body>
 <%@ include file="footer.jsp"%>
 </html>
+

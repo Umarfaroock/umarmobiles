@@ -12,6 +12,11 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <title>Umar Mobiles</title>
+<style>
+body{
+background-color: black;
+}
+</style>
 </head>
 <body>
 <div class="wrapper">
@@ -27,6 +32,15 @@
 					<%@ include file="displayfeatured.jsp"%>
 					</security:authorize>
 					</c:if>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
 	</div>
 	</div>
 	<%@ include file="footer.jsp"%>

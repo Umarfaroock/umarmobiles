@@ -132,22 +132,39 @@
    </style>
 </head>
 <body>
-<%@ include file="header.jsp"%>
-<%@ include file="footer.jsp"%>
-<form action="isvaliduser" method="post" onsubmit="return formRegister()" class="form-horizontal">
-<div class="body"></div>
-		<div class="grad"></div>
-		<div class="header">
-			<div>Log<span>In</span> to ..</div>
-		</div>
-		<br>
-		<div class="login">
-				<input type="text" placeholder="username" name="emailId"><br>
-				<input type="password" placeholder="password" name="password"><br><br><br>
-				<br><input type="button" value="Login">
-         </div>
-</body>
-<%-- <c:choose>
+<br> <br> <br>
+<br> <br> <br>
+<form class="form-horizontal" action="isvaliduser" method="post">
+
+<div class="container">
+			<h1 align="center">Login</h1>
+			<br>
+  <div class="form-group">
+    <label id="mail" class="control-label col-sm-offset-2 col-sm-3" for="email">Email:</label>
+    <div class="col-sm-3">
+      <input type="email" class="form-control" name="emailId" id="email" placeholder="Enter email" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label id="pass" class="control-label col-sm-offset-2 col-sm-3" for="pwd">Password:</label>
+    <div class="col-sm-3"> 
+      <input type="password" class="form-control" name="password" id="pwd" placeholder="Enter password" required>
+    </div>
+  </div>
+  
+  <div class="form-group"> 
+    <div class="col-sm-offset-5 col-sm-3">
+      <button type="submit" class="btn" id="subbutton">Login!</button>
+    <%--  <c:url value="/signup" var="register"></c:url>
+	  <u><button id="btn" class= "btn"><a id="btn" href="${register}">New User?</a></button></u><br> --%>
+    </div>
+  </div>
+</form>
+<br> <br> <br>
+<br> <br> <br>
+<br> <br> <br>
+<br> <br> <br></body>
+ <%-- <c:choose>
 		<c:when test="${not empty LoginButtonClicked}">
 
 			<%@include file="/WEB-INF/views/login.jsp"%>
