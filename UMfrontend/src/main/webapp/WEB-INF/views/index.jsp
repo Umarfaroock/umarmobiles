@@ -12,10 +12,14 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <title>Umar Mobiles</title>
-<style>
+<style type="text/css">
 body{
 background-color: black;
 }
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 0px;
+    }
 </style>
 </head>
 <body>

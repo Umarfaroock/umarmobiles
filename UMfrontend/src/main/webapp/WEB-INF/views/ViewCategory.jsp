@@ -10,22 +10,22 @@
   margin: 1em 8em;
   width: 80%;
   overflow: hidden;
-  background: black;
-  color: white;
+  background-color: black;
+  color: red;
   border-radius: 10px;
-  border: 1px solid black;
+  border: 1px solid red;
 }
 .responstable tr {
-  border: 1px solid green;
+  border: 1px solid red;
 }
 .responstable tr:nth-child(odd) {
-  background-color: transparent;
+  background-color: black;
 }
 .responstable th {
   display: none;
-  border: 1px solid white;
-  background-color: white;
-  color: black;
+  border: 1px solid red;
+  background-color: black;
+  color: red;
   padding: 1em;
 }
 .responstable th:first-child {
@@ -58,11 +58,11 @@
 .responstable td:first-child {
   display: table-cell;
   text-align: center;
-  border-right: 1px solid white;
+  border-right: 1px solid red;
 }
 @media (min-width: 480px) {
   .responstable td {
-    border: 1px solid white;
+    border: 1px solid red;
   }
 }
 .responstable th, .responstable td {
@@ -80,7 +80,7 @@ color:blue;
 }
 body {
   padding: 0 2em;
-  background-image: url("resources/images/bg/background.jpg");
+  background-color: black;
 }
 h1 {
   font-weight: normal;
@@ -91,7 +91,7 @@ h1 span {
 }
 #albums{
 background: threedlightshadow;
-color: black;
+color: red;
 font-size: x-large;
 font-family: fantasy;
 margin-top: 55px;
@@ -99,14 +99,15 @@ margin-bottom: 5px;
 }
 .Latest{
 padding-top: 10px;
-margin-left: 20px;
+margin-left: 0px;
+background-color: black;
 }
 </style>
 </head>
 <body>
 <div class="container">
 	<div class="row">
-		<div id="albums" class="col-sm-12">
+		<div id="albums"> <!-- class="col-sm-12" -->
 			<p class="Latest">Category</p>
 	</div>
 	</div>

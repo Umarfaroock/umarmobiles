@@ -54,7 +54,7 @@
 	font-weight: 200;
 }
 .header div span{
-	color: #5379fa !important;
+	color: red !important;
 }
 .login{
 	position: absolute;
@@ -143,6 +143,12 @@
 }
 ::-moz-input-placeholder{
    color: rgba(255,255,255,0.6);
+}
+
+.btn-default {
+    color: #ca1212;
+    background-color: black;
+    border-color: red;
 }
 </style>
 </head>

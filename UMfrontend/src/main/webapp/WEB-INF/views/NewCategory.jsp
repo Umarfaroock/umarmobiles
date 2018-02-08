@@ -15,13 +15,26 @@
 body {
 /* 	background-image: url("resources/images/bg/background.jpg");
  */
-    background-color: black; 
+    background-color: black;
+    color: red; 
  }
+ .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 0px;
+}
+ .btn-default {
+    color: red;
+    background-color: black;
+    border-color: red;
+}
+
+}
+
 label{
-	color: green;
+	color: red;
 }
 .navbar-default {
-	background-color: #669999;
+	background-color: black;
 </style>
 </head>
 <body>

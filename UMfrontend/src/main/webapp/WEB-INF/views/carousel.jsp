@@ -1,54 +1,39 @@
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-    <li data-target="#myCarousel" data-slide-to="4"></li>
-    <li data-target="#myCarousel" data-slide-to="5"></li>
-    <li data-target="#myCarousel" data-slide-to="6"></li>
-  </ol>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image slider</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Made with WOW Slider - Create beautiful, responsive image sliders in a few clicks. Awesome skins and animations. Image slider" />
+	
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="resources/carousel/engine1/style.css" />
+	<script type="text/javascript" src="resources/carousel/engine1/jquery.js"></script>
+	<!-- End WOWSlider.com HEAD section -->
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active">
-      <img src="resources/images/carousel/TaylorSwift.jpg" alt="Reputation">
-    </div>
+</head>
+<body style="background-color:black;margin:0">
+	
+	<!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
+	<div id="wowslider-container1">
+	<div class="ws_images"><ul>
+		<li><img src="resources/carousel/data1/images/bbkeyone1.jpg" alt="bbkeyone1" title="bbkeyone1" id="wows1_0"/></li>
+		<li><img src="resources/carousel/data1/images/bbkeyone2.jpg" alt="bbkeyone2" title="bbkeyone2" id="wows1_1"/></li>
+		<li><img src="resources/carousel/data1/images/bblogo1.jpg" alt="bblogo1" title="bblogo1" id="wows1_2"/></li>
+		<li><a href="http://wowslider.net"><img src="resources/carousel/data1/images/bbmotion2.jpg" alt="css image slider" title="bbmotion2" id="wows1_3"/></a></li>
+		<li><img src="resources/carousel/data1/images/bbpriv1.jpg" alt="bbpriv1" title="bbpriv1" id="wows1_4"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="bbkeyone1"><span><img src="resources/carousel/data1/tooltips/bbkeyone1.jpg" alt="bbkeyone1"/>1</span></a>
+		<a href="#" title="bbkeyone2"><span><img src="resources/carousel/data1/tooltips/bbkeyone2.jpg" alt="bbkeyone2"/>2</span></a>
+		<a href="#" title="bblogo1"><span><img src="resources/carousel/data1/tooltips/bblogo1.jpg" alt="bblogo1"/>3</span></a>
+		<a href="#" title="bbmotion2"><span><img src="resources/carousel/data1/tooltips/bbmotion2.jpg" alt="bbmotion2"/>4</span></a>
+		<a href="#" title="bbpriv1"><span><img src="resources/carousel/data1/tooltips/bbpriv1.jpg" alt="bbpriv1"/>5</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">image slider</a> by WOWSlider.com v8.8</div>
+	<div class="ws_shadow"></div>
+	</div>	
+	<script type="text/javascript" src="resources/carousel/engine1/wowslider.js"></script>
+	<script type="text/javascript" src="resources/carousel/engine1/script.js"></script>
+	<!-- End WOWSlider.com BODY section -->
 
-    <div class="item">
-      <img src="resources/images/carousel/mars.jpg" alt="uptownfunk">
-    </div>
-
-    <div class="item">
-      <img src="resources/images/carousel/ZAYN.jpg" alt="FiftyShadesDarker">
-    </div>
-    
-    <div class="item">
-      <img src="resources/images/carousel/justin.jpg" alt="Purpose">
-    </div>
-    
-    <div class="item">
-      <img src="resources/images/carousel/ellie.jpg" alt="FiftyShadesofGrey">
-    </div>
-    
-    <div class="item">
-      <img src="resources/images/carousel/djsnake.jpg" alt="DJSnake">
-    </div>
-    
-    <div class="item">
-      <img src="resources/images/carousel/shakira.jpg" alt="Shakira">
-    </div>
-    
-  </div>
-
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+</body>
+</html>

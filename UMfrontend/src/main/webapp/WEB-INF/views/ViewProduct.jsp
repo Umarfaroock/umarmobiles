@@ -1,16 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <br><br><br><br><br>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<!-- <link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
- <script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Product</title>
@@ -20,21 +13,21 @@
   width: 80%;
   overflow: hidden;
   background: black;
-  color: white;
+  color: red;
   border-radius: 10px;
-  border: 1px solid black;
+  border: 1px solid red;
 }
 .product tr {
-  border: 1px solid white;
+  border: 1px solid red;
 }
 .product tr:nth-child(odd) {
-  background-color: transparent;
+  background-color: black;
 }
 .product th {
  display: none;
-  border: 1px solid white;
-  background-color: white;
-  color: black;
+  border: 1px solid red;
+  background-color: black;
+  color: red;
   padding: 1em;
 }
 .product th:first-child {
@@ -67,11 +60,11 @@
 .product td:first-child {
   display: table-cell;
   text-align: center;
-  border-right: 1px solid white;
+  border-right: 1px solid red;
 }
 @media (min-width: 480px) {
   .product td {
-    border: 1px solid white;
+    border: 1px solid red;
   }
 }
 .product th, .product td {
@@ -88,7 +81,7 @@ a{
 color:red;
 }
 body {
-  background-color:white;
+  background-color:black;
 }
 h1 {
   font-weight: normal;
@@ -97,11 +90,35 @@ h1 {
 h1 span {
   color: #167F92;
 }
+#albums{
+background: threedlightshadow;
+color: red;
+font-size: x-large;
+font-family: fantasy;
+margin-top: 55px;
+margin-bottom: 5px;
+}
+.Latest{
+padding-top: 10px;
+margin-left: 0px;
+background-color: black;
+}
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 0px;
+    }
 .navbar-default {
 	background-color: #669999;
 </style>
 </head>
 <body>
+<div class="container">
+	<div class="row">
+		<div id="albums"> <!-- class="col-sm-12" -->
+			<p class="Latest">Products</p>
+	</div>
+	</div>
+	</div>
 <table class="product">
   <tr>
     <th align="left">S.No</th>

@@ -2,7 +2,7 @@
 <head>
 <style type="text/css">
 .container1 {
-	background: transparent;
+	background-color: black;
 	border: 1px solid #b4f7b5;
 	border-radius: 5px;
 	margin: 5px;
@@ -59,7 +59,7 @@ width: 200px;
 }
 #albums{
 background: threedlightshadow;
-color: black;
+color: red;
 font-size: x-large;
 font-family: fantasy;
 margin-top: 35px; 
@@ -67,11 +67,12 @@ margin-bottom: 5px;
 }
 .Latest{
 padding-top: 10px;
+background-color: black;
 }
 </style>
 </head>
 <body>
-		<div id="albums" class="col-sm-12">
+		<div id="albums">  <!-- class="col-sm-12"  -->
 			<p class="Latest">Featured Products</p>
 	</div>
   <c:forEach items="${product}" var="product" varStatus="status">

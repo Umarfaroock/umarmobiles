@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Login</title>
+<title>Signup</title>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -13,9 +13,9 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
- <style type="text/css">
-   .body{
-	background-image: url("https://wallpaperscraft.com/image/black_stone_cherry_t-shirts_guitars_drum_print_6546_1920x1080.jpg");
+<style type="text/css">
+.body{
+	background-color:black;
 	background-size: cover;
 	-webkit-filter: blur(2px);
 	position: absolute;
@@ -54,7 +54,7 @@
 	font-weight: 200;
 }
 .header div span{
-	color: #5379fa !important;
+	color: red !important;
 }
 .login{
 	position: absolute;
@@ -89,7 +89,19 @@
 	font-size: 16px;
 	font-weight: 400;
 	padding: 4px;
-	margin-top: 10px;
+}
+.login input[type=number]{
+	width: 250px;
+	height: 30px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	/* margin-top: 10px; */
 }
 .login input[type=button]{
 	width: 260px;
@@ -103,7 +115,7 @@
 	font-size: 16px;
 	font-weight: 400;
 	padding: 6px;
-	margin-top: 10px;
+	/* margin-top: 10px; */
 }
 .login input[type=button]:hover{
 	opacity: 0.8;
@@ -119,6 +131,10 @@
 	outline: none;
 	border: 1px solid rgba(255,255,255,0.9);
 }
+.login input[type=number]:focus{
+	outline: none;
+	border: 1px solid rgba(255,255,255,0.9);
+}
 .login input[type=button]:focus{
 	outline: none;
 }
@@ -128,42 +144,41 @@
 ::-moz-input-placeholder{
    color: rgba(255,255,255,0.6);
 }
-   
-   </style>
+
+.btn-default {
+    color: #ca1212;
+    background-color: black;
+    border-color: red;
+}
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 0px;
+    }
+</style>
 </head>
 <body>
-<br> <br> <br>
-<br> <br> <br>
+<%@ include file="header.jsp"%>
+<%@ include file="footer.jsp"%>
 <form class="form-horizontal" action="isvaliduser" method="post">
-
-<div class="container">
-			<h1 align="center">Login</h1>
-			<br>
-  <div class="form-group">
-    <label id="mail" class="control-label col-sm-offset-2 col-sm-3" for="email">Email:</label>
-    <div class="col-sm-3">
-      <input type="email" class="form-control" name="emailId" id="email" placeholder="Enter email" required>
-    </div>
-  </div>
-  <div class="form-group">
-    <label id="pass" class="control-label col-sm-offset-2 col-sm-3" for="pwd">Password:</label>
-    <div class="col-sm-3"> 
-      <input type="password" class="form-control" name="password" id="pwd" placeholder="Enter password" required>
-    </div>
-  </div>
-  
-  <div class="form-group"> 
-    <div class="col-sm-offset-5 col-sm-3">
-      <button type="submit" class="btn" id="subbutton">Login!</button>
-    <%--  <c:url value="/signup" var="register"></c:url>
-	  <u><button id="btn" class= "btn"><a id="btn" href="${register}">New User?</a></button></u><br> --%>
-    </div>
-  </div>
-</form>
-<br> <br> <br>
-<br> <br> <br>
-<br> <br> <br>
-<br> <br> <br></body>
+	<div class="body"></div>
+	<div class="grad"></div>
+	<div class="header">
+		<div>
+			Log<span>In</span>..
+		</div>
+	</div>
+	<br>
+	<div class="login">
+		<br><input type="text" placeholder="Email:" name="emailId"><br>
+		<br><input type="password" placeholder="Password:" name="password"><br>
+		 <br>
+		<!-- <input type="button" value="Signup"> -->
+		        <button type="submit" class="btn btn-default">Login</button>
+		
+	</div>
+	</form>
+</body>
+</html><br> <br> <br></body>
  <%-- <c:choose>
 		<c:when test="${not empty LoginButtonClicked}">
 

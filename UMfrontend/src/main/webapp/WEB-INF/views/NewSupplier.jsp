@@ -8,13 +8,12 @@
 <style type="text/css">
 body {
 	background-color:black;
+	color: red;
 }
 label{
-	color: white;
+	color: red;
 }
-body{
-color: black;
-}
+
 </style>
 </head>
 <body>
